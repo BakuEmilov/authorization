@@ -1,8 +1,13 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
-  return <Redirect to="/login" />;
+  return (
+    <div>
+      <Link to="/login">Sign in</Link>
+      <Link to="/register">Register</Link>
+    </div>
+  );
 };
 
 export default HomePage;
